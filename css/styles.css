@@ -1,6 +1,6 @@
 :root {
   /* font */
-  --main-font-famaly: "Roboto", sans-serif;
+  --main-font-famaly: 'Roboto', sans-serif;
   --main-font-size: 14px;
 
   /* Text color */
@@ -12,6 +12,7 @@
   /* BG calor */
   --secondary-bg-color: #2f303a;
   --accent-bg-color: #2196f3;
+  --light-bg-color: #f5f4fa;
 }
 body {
   font-family: var(--main-font-famaly);
@@ -22,11 +23,12 @@ body {
 /*  Оформление  header */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .accent-logo {
@@ -34,32 +36,30 @@ body {
 }
 .site-nav {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .link {
   text-decoration: none;
   font-weight: 500;
-  color: inherit;
-  line-height: 1.14px;
+  color: var(--main-txt-color);
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .link-address {
   text-decoration: none;
   font-weight: 500;
   color: var(--secondary-txt-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .link.current {
   color: var(--accent-txt-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.link:hover,
+.link:focus,
 .link-address:hover,
 .link-address:focus {
   color: var(--accent-txt-color);
@@ -71,17 +71,16 @@ body {
 }
 
 .logo-footer {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--light-txt-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 .list-footer {
   list-style: none;
-  margin: 0;
-  padding: 0;
   font-style: normal;
 }
 
@@ -89,19 +88,21 @@ body {
   text-decoration: none;
   color: var(--light-txt-color);
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.list-footer .link-adress {
+.link-footer {
   text-decoration: none;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.list-footer .link-adress:hover,
-.list-footer .link-adress:focus,
 .address-footer:hover,
-.address-footer:focus {
+.address-footer:focus,
+.link-footer:hover,
+.link-footer:focus {
   color: var(--accent-txt-color);
 }
 
@@ -122,7 +123,7 @@ body {
 }
 .hero-btn {
   color: var(--light-txt-color);
-  font-family: inherit;
+  font-family: var(--main-font-famaly);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -145,35 +146,38 @@ body {
   margin: -1px;
 }
 .title-qualities {
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .text-qualities {
   color: var(--secondary-txt-color);
-  line-height: 1.71px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* Чим ми займаємося */
 .title-work,
 .title-team {
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
 /* наша команда */
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--light-bg-color);
 }
 .card-team {
   background-color: #ffffff;
-  width: 270px;
-  height: 368px;
 }
 .title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -181,31 +185,31 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-txt-color);
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
 /* Портфолио */
 
 .btn {
-  background: #f5f4fa;
-  font-family: inherit;
+  background: var(--light-bg-color);
+  font-family: var(--main-font-famaly);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: #212121;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-color);
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--light-txt-color);
   background-color: var(--accent-bg-color);
 }
 
 .card-potfolio {
   background: #ffffff;
-  width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
 }
 
 .title-card {
@@ -215,6 +219,7 @@ body {
 }
 .subtitle-card {
   font-size: 16px;
-  line-height: 1.88;
   color: var(--secondary-txt-color);
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
